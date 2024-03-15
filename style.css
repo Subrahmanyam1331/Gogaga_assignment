@@ -1,0 +1,285 @@
+.gogago-logo {
+    width: 120px;
+    height: 70px;
+}
+
+
+
+#navItem1 {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+#navItem2 {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+#navItem3 {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+#navItem4 {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+#navItem5 {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.banner-section-bg-container {
+    background-image: url("https://images.pexels.com/photos/67818/pexels-photo-67818.jpeg");
+    height: 100vh;
+    background-size: cover;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.banner-heading {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.banner-caption {
+    color: black;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.custom-outline-button {
+    color: black;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-radius: 8px;
+}
+
+.image {
+    width: 100px;
+    height: 200px;
+}
+
+.holiday-trips {
+    padding: 20px;
+}
+
+.holiday-trips-heading {
+    font-weight: bold;
+    font-family: "Helvetica";
+}
+
+.real-price {
+    text-decoration: line-through;
+}
+
+.holiday-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.place-heading {
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: "Roboto";
+}
+
+.flight-booking {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flight-main-heading {
+    color: grey;
+    font-weight: bold;
+    font-family: "Helvetica";
+}
+
+.flight-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-image: linear-gradient(blue, white);
+    border-width: 5px;
+}
+
+.time {
+    color: white;
+}
+
+.hotel-booking {
+    overflow: scroll;
+    background-color: black;
+}
+
+.booking-bg-container {
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+}
+
+.booking-places-heading {
+    color: #f19116;
+    font-size: 35px;
+    padding: 10px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.booking-card-container {
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.booking-places-card-heading {
+    color: #0f0e46;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.packages {
+    padding: 20px;
+}
+
+.package-image {
+    width: 150px;
+    height: 150px;
+}
+
+.packages-heading {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+
+.booking-places-card-container {
+    font-family: "Roboto";
+    color: #6c6b70;
+    font-size: 15px;
+}
+
+.booking-places-card-image {
+    height: 110px;
+    width: 90px;
+    justify-content: flex-end;
+}
+
+.hotel-button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.follow-us-icon-container {
+    width: 80px;
+    height: 80px;
+    background-color: #faf7e8;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+    border-radius: 40px;
+    margin: 15px;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+    text-align: center;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+
+.heading-1 {
+    color: white;
+}
+
+.heading-2 {
+    color: white;
+    font-size: 20px;
+}
+
+.heading-3 {
+    color: #323f4b;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.card-1 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card-2 {
+    background-color: #f5f7fa;
+    border-radius: 20px;
+    padding: 15px;
+    border-color: #cbd2d9;
+    border-width: 5px;
+}
+
+.error-msg {
+    color: red;
+}
+
+.result-heading {
+    color: #21396c;
+}
+
+.card-3 {
+    background-color: #f5f7fa;
+    border-radius: 20px;
+    padding: 15px;
+    border-color: #cbd2d9;
+    border-width: 5px;
+    text-align: center;
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .sub-package-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

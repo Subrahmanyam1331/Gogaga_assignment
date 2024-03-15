@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/41540657b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://static.wixstatic.com/media/2d34e5_b534244efca647acba1d5e4aaeb2e613~mv2.png" class="gogago-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#holidayTripSection">
+                        Holiday Trips
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#flightBooking" id="navItem2">Flight Booking</a>
+                    <a class="nav-link" href="#hotelBooking" id="navItem3">Hotel Booking</a>
+                    <a class="nav-link" href="#packagesSection" id="navItem4">Packages</a>
+                    <a class="nav-link" href="#followUs" id="navItem5">Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-end flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-4">ADVENTURE IS WORTHWHILE</h1>
+            <p class="banner-caption mt-3 mb-4">Discover New Places With Us</p>
+            <button class="custom-outline-button" onclick="redirectToPackages()">Discover More</button>
+        </div>
+    </div>
+    <div class="holiday-trips" id="holidayTripSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="holiday-trips-heading">Holiday Trips</h1>
+                    <div class="holiday-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tA4GLAImL0vBz3VJRBHwX-o-SJTiR097Vp3zf9W67A&s" class="image" />
+                        <div class="content">
+                            <h1 class="place-heading">Mumbai</h1>
+                            <p class="place-para">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <div class="price">$100.00</div>
+                                <div class="real-price pl-3">$150.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holiday-card">
+                        <img src="https://t3.ftcdn.net/jpg/02/54/58/20/360_F_254582082_kXuSkV48X1gLlecsoYegKW6ZDWJSvzcW.jpg" class="image" />
+                        <div class="content">
+                            <h1 class="place-heading">Chennai</h1>
+                            <p class="place-para">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <div class="price">$90.00</div>
+                                <div class="real-price pl-3">$120.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holiday-card">
+                        <img src="https://t4.ftcdn.net/jpg/05/40/30/71/360_F_540307170_qg8R8Seug9NYJzL7FpbBuW5St0lIyAvv.jpg" class="image" />
+                        <div class="content">
+                            <h1 class="place-heading">Noida</h1>
+                            <p class="place-para">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <div class="price">$125.00</div>
+                                <div class="real-price pl-3">$140.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holiday-card">
+                        <img src="https://w0.peakpx.com/wallpaper/407/372/HD-wallpaper-biswa-bangla-gate-city-kolkata.jpg" class="image" />
+                        <div class="content">
+                            <h1 class="place-heading">Kolkata</h1>
+                            <p class="place-para">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <div class="price">$95.00</div>
+                                <div class="real-price pl-3">$110.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holiday-card">
+                        <img src="https://www.shutterstock.com/image-photo/not-brazil-nor-argentina-my-260nw-1105196291.jpg" class="image" />
+                        <div class="content">
+                            <h1 class="place-heading">Himachal Pradesh</h1>
+                            <p class="place-para">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <div class="price">$170.00</div>
+                                <div class="real-price pl-3">$200.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holiday-card">
+                        <img src="https://media.istockphoto.com/id/482072953/photo/india-gate-at-night-new-delhi.webp?b=1&s=170667a&w=0&k=20&c=EdAMUFjyTOcZhl4CeGPP3Bh2BS24dnFTQsi2EZ7fcXY=" class="image" />
+                        <div class="content">
+                            <h1 class="place-heading">Delhi</h1>
+                            <p class="place-para">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <div class="price">$150.00</div>
+                                <div class="real-price pl-3">$170.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flight-booking" id="flightBooking">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="flight-main-heading">Flight Booking</h1>
+                    <div class="flight-card">
+                        <h2 class="flight-heading">Air India</h2>
+                        <div class="d-flex flex-row">
+                            <div class="p-3">
+                                <p>Depart</p>
+                                <p class="time">09:30 AM</p>
+                            </div>
+                            <div class="p-3">
+                                <p>Arrives</p>
+                                <p class="time">18:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <h1 class="place">IND</h1>
+                                <p>India</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+                            </svg>
+                            <div class="pl-1">
+                                <h1 class="place">MUC</h1>
+                                <p>Munich, Germany</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="redirectToForms()">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="flight-card">
+                        <h2 class="flight-heading">JetBlue</h2>
+                        <div class="d-flex flex-row">
+                            <div class="p-3">
+                                <p>Depart</p>
+                                <p class="time">10:30 AM</p>
+                            </div>
+                            <div class="p-3">
+                                <p>Arrives</p>
+                                <p class="time">21:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <h1 class="place">IND</h1>
+                                <p>India</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+                            </svg>
+                            <div class="pl-1">
+                                <h1 class="place">ASM</h1>
+                                <p>American Samoa</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="redirectToForms()">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="flight-card">
+                        <h2 class="flight-heading">Hawaiian Airlines</h2>
+                        <div class="d-flex flex-row">
+                            <div class="p-3">
+                                <p>Depart</p>
+                                <p class="time">11:30 AM</p>
+                            </div>
+                            <div class="p-3">
+                                <p>Arrives</p>
+                                <p class="time">22:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <h1 class="place">IND</h1>
+                                <p>India</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+                            </svg>
+                            <div class="pl-1">
+                                <h1 class="place">AUT</h1>
+                                <p>Austria</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="redirectToForms()">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="flight-card">
+                        <h2 class="flight-heading">American Airlines</h2>
+                        <div class="d-flex flex-row">
+                            <div class="p-3">
+                                <p>Depart</p>
+                                <p class="time">08:40 AM</p>
+                            </div>
+                            <div class="p-3">
+                                <p>Arrives</p>
+                                <p class="time">09:45 PM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <h1 class="place">IND</h1>
+                                <p>India</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+                            </svg>
+                            <div class="pl-1">
+                                <h1 class="place">CAN</h1>
+                                <p>Canada</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="redirectToForms()">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotel-booking" id="hotelBooking">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="booking-bg-container">
+                        <h1 class="booking-places-heading">Hotel Booking</h1>
+                        <div class="booking-card-container d-flex flex-row">
+                            <div>
+                                <h1 class="booking-places-card-heading">Empire Royale Hotel</h1>
+                                <p class="booking-places-card-container">The Empire Hotel - Every Gossip Girl's Dream Hotel Come True ... The Empire Hotel's chic, neon red sign is an iconic part of New York City. </p>
+                            </div>
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png" class="booking-places-card-image" />
+                        </div>
+                        <div class="booking-card-container d-flex flex-row">
+                            <div>
+                                <h1 class="booking-places-card-heading">Radisson Blu</h1>
+                                <p class="booking-places-card-container">Radisson Blu® is an upper upscale hotel brand that delivers a positive and personalized service in stylish spaces. </p>
+                            </div>
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png" class="booking-places-card-image">
+                        </div>
+                        <div class="booking-card-container d-flex flex-row">
+                            <div>
+                                <h1 class="booking-places-card-heading">The Royal Orchid</h1>
+                                <p class="booking-places-card-container">Royal Orchid Hotels is known in the hospitality industry for its unparalleled services and top-notch amenities.</p>
+                            </div>
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card3-img.png" class="booking-places-card-image">
+                        </div>
+                        <div class="booking-card-container d-flex flex-row">
+                            <div>
+                                <h1 class="booking-places-card-heading">Taj Palace</h1>
+                                <p class="booking-places-card-container">Spread over six acres of lush gardens, the landmark hotel is synonymous with timeless luxury and unmatched hospitality. </p>
+                            </div>
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card1-img.png" class="booking-places-card-image" />
+                        </div>
+                        <div class="booking-card-container d-flex flex-row">
+                            <div>
+                                <h1 class="booking-places-card-heading">Rambagh Palace</h1>
+                                <p class="booking-places-card-container">The beautiful palace is spread around 47 acres of lush greens and is one of the best places to visit in Jaipur.</p>
+                            </div>
+                            <img src="https://assets.ccbp.in/frontend/static-website/flats-list-card2-img.png" class="booking-places-card-image" />
+                        </div>
+                        <button class="hotel-button" onclick="redirectToForms()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="packages" id="packagesSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="packages-heading">Packages</h1>
+                    <div class="sub-package-container">
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_NxVysrIGyECy_7RbPH6NvkXlQEHQanWBfs66ikACw&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Taj Mahal</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+                                </div>
+                                <div class="price">$80.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://media.istockphoto.com/id/469788052/photo/amer-fort-near-jaipur.jpg?s=612x612&w=0&k=20&c=Rsd9v_Ix39ce8U9QKo3UnWfEMG1DUq4hnzh3APPi3g8=" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Amber <br> Palace</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$110.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxNVFQJFVTOTcpxIwPAJ_c8UHLjMO9cYS2RCp3n6RxQ&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Mysore <br>Palace</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$130.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://www.shutterstock.com/image-photo/hyderabadindia-december-16-charminar-hyderabad-260nw-555387298.jpg" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Hyderabad</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$60.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://t3.ftcdn.net/jpg/01/40/51/56/360_F_140515612_0MMpqpsIvs6xno5YXmPVy9FUmZ4uLnFB.jpg" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Goa</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="price">$100.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gCyrZ4IrZvoIZrnubfZQgLb1sdwg56g8X0lE35FwHA&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">India Gate</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="price">$90.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAGLl2N2KQqhIxxtZ1BTk93tI-DPxCUzjviphdBqcwIQ&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Puducherry</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$100.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://media.istockphoto.com/id/1164329797/photo/hindu-sadhu-sitting-on-a-boat-overlooking-varanasi-city-architecture-at-sunset.jpg?s=612x612&w=0&k=20&c=LbpIHRo7kGT7dbUr6b6UuD1d6P0yCaKZ2lbqo3TY988=" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Varanasi</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="price">$105.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbV8vsXUctJkktWhTO0iLHD1FYI9l3YhW9llVs3h8mHg&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Leh Market</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$130.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcNThYxl1v_RqPMh6whFb31-TD6ipOiOYiMbOibjxNyw&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Golden <br> Temple</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$150.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOl-KDCoLVs-IFfX_MD7o9sOalUxdTdDvb0liNTrGCPg&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Qutab <br> Minar</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$90.00</div>
+                            </div>
+                        </div>
+                        <div class="holiday-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsD0mV2zDgyU1FhRzlgB8IQx7-R7wTD-1MtdTowhD50Q&s" class="package-image" />
+                            <div class="content">
+                                <h1 class="place-heading">Red Fort</h1>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="price">$150.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <a href="https://www.linkedin.com/company/gogagaholidays/"><i class="fa-brands fa-linkedin icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3" id="formsSection">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-1">
+                    <h1 class="heading-3 pt-3 pb-3">Give Your Valuable Details</h1>
+                    <div class="card-2">
+                        <form id="bookmarkForm">
+                            <div class="p-3">
+                                <label for="siteNameInput">NAME</label>
+                                <input id="siteNameInput" type="text" class="form-control" placeholder="Enter Your Name" />
+                                <p class="error-msg" id="siteNameErrMsg"></p>
+                            </div>
+                            <div class="p-3">
+                                <label for="siteUrlInput">MAIL</label>
+                                <input id="siteUrlInput" type="text" class="form-control" placeholder="Enter Your Mail Id" />
+                                <p class="error-msg" id="siteUrlErrMsg"></p>
+                            </div>
+                            <div class="p-3">
+                                <label for="siteUrlInput">MOBILE</label>
+                                <input id="siteUrlInput" type="number" class="form-control" placeholder="Enter Your Mobile Number" />
+                                <p class="error-msg" id="siteUrlErrMsg"></p>
+                            </div>
+                            <div class="p-3">
+                                <label for="siteUrlInput">DATE OF JOURNEY</label>
+                                <input id="siteUrlInput" type="date" class="form-control" />
+                                <p class="error-msg" id="siteUrlErrMsg"></p>
+                            </div>
+                            <div class="p-3 d-flex flex-row justify-content-end">
+                                <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
